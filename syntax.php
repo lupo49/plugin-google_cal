@@ -16,21 +16,7 @@ require_once(DOKU_PLUGIN.'syntax.php');
  * need to inherit from this class
  */
 class syntax_plugin_google_cal extends DokuWiki_Syntax_Plugin {
- 
-    function getInfo(){
-      return array(
-        'author1' => 'Kite',
-        'email1'  => 'kite@puzzlers.org',
-		'author2' => 'Christopher Smith',
-        'email2'  => 'chris@jalakai.co.uk',
-        'date'   => '2007-05-01',
-        'name'   => 'Google Calendar Plugin',
-        'desc'   => 'Adds a Google Calendar iframe 
-                     syntax: {{cal>name@address[w,h]|alternate text}}',
-        'url'    => 'http://www.dokuwiki.org/plugin:google_cal',
-      );
-    }
- 
+  
     function getType() { return 'substition'; }
     function getPType(){ return 'block'; }
     function getSort() { return 305; }
