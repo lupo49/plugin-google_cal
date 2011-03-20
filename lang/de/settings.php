@@ -8,5 +8,3 @@
  
 // for the configuration manager
 $lang['gcal_js_ok']  = 'JavaScript URLs erlauben';
-
-?>
