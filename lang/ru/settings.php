@@ -6,5 +6,4 @@
  * @author Aleksandr Selivanov <alexgearbox@gmail.com>
  */
 
-// для настроек вики
 $lang['gcal_js_ok']  = 'Разрешить URL с&nbsp;JavaScript';

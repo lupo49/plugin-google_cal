@@ -1,4 +1,4 @@
-base   google_cal
+base   googlecal
 author Kite, Christopher Smith
 email  kite@puzzlers.org
 date   2007-05-01
