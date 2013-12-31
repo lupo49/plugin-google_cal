@@ -65,7 +65,7 @@ class syntax_plugin_googlecal extends DokuWiki_Syntax_Plugin {
             // Two styles: wiki and error
             switch($style) {
                 case 'wiki':
-                    $renderer->doc .= "<iframe src='http://www.google.com/calendar/embed?src=$url&amp;height=$h&amp;title=$alt'".
+                    $renderer->doc .= "<iframe src='https://www.google.com/calendar/embed?src=$url&amp;height=$h&amp;title=$alt'".
                 "title='$alt'  width='$w' height='$h' frameborder='0'></iframe>\n";
                     break;
                 case 'error':
