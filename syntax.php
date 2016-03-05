@@ -27,7 +27,7 @@ class syntax_plugin_googlecal extends DokuWiki_Syntax_Plugin {
         $this->Lexer->addSpecialPattern('{{cal>[^}]*?}}', $mode, 'plugin_googlecal');
     }
 
-    function handle($match, $state, $pos, &$handler){        
+    function handle($match, $state, $pos, Doku_Handler $handler){        
         if(preg_match('/{{cal>(.*)/', $match)) {             // Hook for future features
             // Handle the simplified style of calendar tag
             $match = html_entity_decode(substr($match, 6, -2));
@@ -58,7 +58,7 @@ class syntax_plugin_googlecal extends DokuWiki_Syntax_Plugin {
         } // matched {{cal>...
     }
 
-    function render($mode, &$renderer, $data) {
+    function render($mode, Doku_Renderer $renderer, $data) {
         list($style, $url, $alt, $w, $h) = $data;
         
         if($mode == 'xhtml'){
